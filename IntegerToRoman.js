@@ -2,6 +2,10 @@
 
 function intToRoman(num) {
     let result = "";
+    if (num < 1 || num > 3999) {
+        return result;
+    }
+
     let romans = new Map;
 
     romans.set("M", 1000);
